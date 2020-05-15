@@ -1,0 +1,18 @@
+<h3> Single Tenant's information </h3>
+
+<label>Name:</label>
+<h4> <%= @tenant.name %> </h4>
+
+<label>Apartment:</label>
+<a href="/apartments/<%= @tenant.apartment.id %>">
+    <h4>
+        <%= @tenant.apartment.address %>
+    </h4>
+</a>
+
+
+<form action="/tenants/<%= @tenant.id %>" method="post">
+<input type="hidden" name="_method" value="delete">
+
+<input type="submit" value="Delete Tenant :("/>
+</form>

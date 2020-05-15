@@ -1,1 +1,14 @@
+<form action="/owners/<%=@tenant.id%>" method="post">
+<input type="hidden" name="_method" value="patch"/>
 
+<label>Name:</label>
+<input type="text" name="name" value="<%= @tenant.name%>"/>
+
+<input type="submit"/>
+<!--
+<label>Apartment:</label>
+<input type="text" name="name" value="<%= @owner.name%>"/>
+
+<input type="submit"/>
+-->
+</form>
